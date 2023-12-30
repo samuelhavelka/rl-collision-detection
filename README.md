@@ -1,6 +1,5 @@
-# rl_collision_detection
-
-Reinforcement learning for collision detection using Deep Q Learning. Uses StableBaselines3 for RL algorithm training.
+# Reinforcement learning for collision detection using Deep Q Learning. 
+Uses StableBaselines3 for RL algorithm training.
 
 Completed Features:
 - Custom environment: robot must navigate to opposite end of a room with randomly placed obstacles.
