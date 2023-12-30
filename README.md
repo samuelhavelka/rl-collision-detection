@@ -14,6 +14,6 @@ Work in progress features:
 - Alternative RL algorithm with continuous action space capabilities (possibly TD3).
 
 ## Robot Sensor Demo:
-![](https://github.com/samuelhavelka/rl_collision_detection/sensor_animation.gif)
+![](https://github.com/samuelhavelka/rl_collision_detection/blob/main/sensor_animation.gif)
 
 ## Robot RL guided collision avoidance Demo:
