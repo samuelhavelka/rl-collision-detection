@@ -12,7 +12,7 @@ Work in progress features:
 - SLAM: simultaneous localization and modeling.
   - Testing genetic algorithm using DEAP package to estimate both the robot's location and map of environment based on the sensor measurements.
 - Alternative RL algorithm with continuous action space capabilities (possibly TD3).
-- Alternative genetic algorithms such as enforces sub-populations (ESP).
+- Alternative neuroevolutionary RL algorithms such as Enforced Sub-Populations (ESP).
 
 ## Robot Sensor Demo:
 Each green dot represents a measurement taken by the agent.
