@@ -92,6 +92,7 @@ class Env(gym.Env):
     def reset(self, randomize_obstacles=True, seed=False):
         """Reset robot location and obstacles."""
         super().reset(seed=seed)
+        self.step_count = 0
 
         # reset robot location
         self.robot.set_robot_position(self.robot.origin[0][0], 
@@ -160,7 +161,7 @@ class Env(gym.Env):
         if self.robot.x >= self.x-2:
             return float(1_000), True, False
         
-        if self.step_count > 2000:
+        if self.step_count > 1000:
             self.step_count = 0
             return float(0), True, True
 
@@ -177,13 +178,13 @@ class Env(gym.Env):
 
     def randomize_obstacles(self, k=5, seed=False):
         possible_locations = [[5,1],[5,7],
-                              [10,1],[10,3],[10,6],[10,9],
+                              [10,3],[10,6],[10,9],
                               [15,2],[15,5],[15,8],
-                              [20,1],[20,4],[20,7],[20,9],
+                              [20,1],[20,4],[20,7],
                               [25,2],[25,5],[25,8],
-                              [10,1],[30,3],[30,6],[30,9],
+                              [30,3],[30,6],[30,9],
                               [35,2],[35,5],[35,8]]
-        
+                            #   ,[10,1],[20,9]]
         if seed: random.seed(seed)
         
         obstacles_list = random.sample(possible_locations,k=k)
