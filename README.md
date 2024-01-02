@@ -20,8 +20,8 @@ Each green dot represents a measurement taken by the agent.
 
 The only information the agent has about its environment is these measurements, its current x and y position, and its current orientation.
 
-<img src="https://github.com/samuelhavelka/rl_collision_detection/blob/main/gifs/sensor_animation.gif" width="1280" height="250"/>
+<img src="https://github.com/samuelhavelka/rl_collision_detection/blob/main/gifs/sensor_animation.gif" width="1280" height="320"/>
 
 ## Robot RL guided collision avoidance demo:
 
-<img src="https://github.com/samuelhavelka/rl_collision_detection/blob/main/gifs/rl_animation.gif" width="1280" height="250"/>
+<img src="https://github.com/samuelhavelka/rl_collision_detection/blob/main/gifs/rl_animation.gif" width="1280" height="320"/>
