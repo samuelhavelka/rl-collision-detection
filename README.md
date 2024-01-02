@@ -22,6 +22,7 @@ The only information the agent has about its environment is these measurements, 
 
 <img src="https://github.com/samuelhavelka/rl_collision_detection/blob/main/gifs/sensor_animation.gif" width="1000" height="250"/>
 
-## Robot RL guided collision avoidance demo:
+## Robot RL-controlled collision avoidance demo:
+The environment is randomized every episode and the robot receives its maximum reward for crossing the green finish line on the right.
 
 <img src="https://github.com/samuelhavelka/rl_collision_detection/blob/main/gifs/rl_animation.gif" width="1000" height="250"/>
