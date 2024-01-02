@@ -24,4 +24,4 @@ The only information the agent has about its environment is these measurements, 
 
 ## Robot RL guided collision avoidance demo:
 
-<img src="https://github.com/samuelhavelka/rl_collision_detection/blob/main/gifs/rl_animation.gif" width="1280" height="250"/>
+<img src="https://github.com/samuelhavelka/rl_collision_detection/blob/main/gifs/rl_animation.gif" width="1000" height="250"/>
