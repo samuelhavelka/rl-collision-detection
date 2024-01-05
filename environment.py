@@ -21,7 +21,7 @@ class Env(gym.Env):
         self.x = world_size[0]
         self.y = world_size[1]
         self.step_count = 0
-        self.k_obstacles = 10
+        self.k_obstacles = 8
 
         # define action space
         self.action_space = spaces.Discrete(n=5)

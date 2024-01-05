@@ -14,7 +14,9 @@ def make_env():
     # create environment with a set of obstacles
     env = Env(world_size=[40,10], 
           obstacles=[[5,1],[10,4],[15,7],[20,5],[30,3],[35,7],[25,7]])
-    robot = Robot(env=env,initial_loc=[1,5], inital_orient=0)
+    
+    robot = Robot(env=env,initial_loc=[1,5], inital_orient=0,
+                  robot_dims=[0.8,0.8])
     return env
 
 
@@ -47,7 +49,7 @@ if __name__ == "__main__":
                 progress_bar=True, callback=checkpoint_callback, 
                 reset_num_timesteps=False)
     # save final model
-    model.save(f"models\dqn_collision_model_r2")
+    model.save(f"models\dqn_collision_model")
 
     # model.load(f"logs\dqn_model_2000000_steps.zip")
     vec_env = model.get_env()

@@ -426,14 +426,14 @@ if __name__ == "__main__":
     env = Env(world_size=[40,10], 
               obstacles=[[8,8],[10,5],[15,2],[4,1]])
 
-    robot = Robot(env=env,initial_loc=[20,5], inital_orient=0)
+    robot = Robot(env=env,initial_loc=[8,5.5], inital_orient=0)
 
     input("Press Enter to run sim...")
 
     for _ in range(50):
         
         # move robot
-        robot.vector_move(0.5,10)
+        robot.vector_move(0.1,0)
 
         # scan environment and plot measurement points
         x_list, y_list, labels = robot.observe_environment_xy()
